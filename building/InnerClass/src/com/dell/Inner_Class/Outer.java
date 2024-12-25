@@ -15,10 +15,6 @@ public class Outer {
         public Inner() {
         }
 
-        public Inner(Outer outer) {
-
-        }
-
         public void test() {
             System.out.println(this.age);
             System.out.println(Outer.a);

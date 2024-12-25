@@ -5,8 +5,8 @@ public class Test {
     }
 
     public static void main(String[] args) {
-        Outer.Inner in = new Outer.Inner(new Outer());
-        in.test();
+//        Outer.Inner in = new Outer.Inner(new Outer());
+//        in.test();
         Animal a = new Animal() {
             public void cry() {
                 System.out.println("喵喵喵");
