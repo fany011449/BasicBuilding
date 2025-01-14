@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/building/ATM/ATM.iml" filepath="$PROJECT_DIR$/building/ATM/ATM.iml" />
+      <module fileurl="file://$PROJECT_DIR$/building/Abstract/Abstract.iml" filepath="$PROJECT_DIR$/building/Abstract/Abstract.iml" />
+      <module fileurl="file://$PROJECT_DIR$/building/Algorithm/Algorithm.iml" filepath="$PROJECT_DIR$/building/Algorithm/Algorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/building/Api/Api.iml" filepath="$PROJECT_DIR$/building/Api/Api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/building/Arrays/Arrays.iml" filepath="$PROJECT_DIR$/building/Arrays/Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/building/BigDecimal/BigDecimal.iml" filepath="$PROJECT_DIR$/building/BigDecimal/BigDecimal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Code.iml" filepath="$PROJECT_DIR$/.idea/Code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/building/Enum/Enum.iml" filepath="$PROJECT_DIR$/building/Enum/Enum.iml" />
+      <module fileurl="file://$PROJECT_DIR$/building/Generics/Generics.iml" filepath="$PROJECT_DIR$/building/Generics/Generics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/building/InnerClass/InnerClass.iml" filepath="$PROJECT_DIR$/building/InnerClass/InnerClass.iml" />
+      <module fileurl="file://$PROJECT_DIR$/building/Interface/Interface.iml" filepath="$PROJECT_DIR$/building/Interface/Interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/building/Lambda/Lambda.iml" filepath="$PROJECT_DIR$/building/Lambda/Lambda.iml" />
+      <module fileurl="file://$PROJECT_DIR$/building/Method_references/Method_references.iml" filepath="$PROJECT_DIR$/building/Method_references/Method_references.iml" />
+      <module fileurl="file://$PROJECT_DIR$/building/Regex/Regex.iml" filepath="$PROJECT_DIR$/building/Regex/Regex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/building/SingleInstance/SingleInstance.iml" filepath="$PROJECT_DIR$/building/SingleInstance/SingleInstance.iml" />
+      <module fileurl="file://$PROJECT_DIR$/building/StringBuilder/StringBuilder.iml" filepath="$PROJECT_DIR$/building/StringBuilder/StringBuilder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/building/Time/Time.iml" filepath="$PROJECT_DIR$/building/Time/Time.iml" />
+    </modules>
+  </component>
+</project>
