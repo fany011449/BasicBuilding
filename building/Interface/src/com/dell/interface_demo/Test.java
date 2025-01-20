@@ -1,6 +1,6 @@
 package com.dell.interface_demo;
-
-public class Test {
+  
+public class  Test {
     public Test() {
     }
 
