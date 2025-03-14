@@ -34,3 +34,30 @@ Collection <E>
     HashSet
         LinkedHashSet："有序" 、 無重複、無索引
     TreeSet："按照大小默認升序排序"、無重複、無索引
+
+ArrayList  底層是基於"數組"存儲data
+【特性】：
+    1. 查詢 快
+    2. 增刪 慢
+
+ => 原先預設是給空的數組。DEFAULTCAPACITY_EMPTY_ELEMENTDATA = {};
+ => 是第一次添加data後，才會藉由grow()擴容。
+    return elementData = new Object[Math.max(DEFAULT_CAPACITY, minCapacity)];
+    由於DEFAULT_CAPACITY是10, 所以返回會是10作為數組的Size。
+ => 當元素到11索引時，會進行第二次grow()。此時數組長度會從10 -> 15。成長1.5倍
+ => 同理索引16，長度會是 15+ (15 >> 1) = 15 + 7 = 22
+
+LinkedList 底層是基於"鏈表"存儲data
+【單鏈表】
+    => 節點在內存中是不連續的，每個節點包含的'數據值'和'下一個節點的地址'
+
+    【特性】：
+        1. 查詢 慢 ; 無論查詢哪個數據，都需要從頭開始查詢
+        2. 增刪 相對快
+【雙鏈表】
+    => 節點在內存中是不連續的，每個節點包含的'數據值'和'下一個節點的地址'和'前一個節點的地址'
+
+    【特點】：
+        1. 查詢 慢
+        2. 增刪 相對快。 對(首尾的元素) 增刪改查 是極快的
+
