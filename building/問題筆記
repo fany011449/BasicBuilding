@@ -91,7 +91,35 @@ Collection <E> 集合體系結構：
         TreeSet與TreeMap的底層原理相同，都是基於紅黑樹實現。
         LinkedHashMap的底層原理，都是基於LinkedHashSet
 
+【字符串】
+    ASCII：只有英文、數字、符號等。占一個字節
+    GBK：漢字占2個字節。英文、符號占一個字節
+    UTF-8：漢字占3個字節，英文、數字一個字節（常用）
 
+    => 解碼與編碼時需要一致，否則就會出現亂碼
+
+【IO流】
+              【抽象類】          【實現類】
+    字節輸入流 InputStream       FileInputStream     BufferedInputStream                                         DataInputStream
+    字節輸出流 OutputStream      FileOutputStream    BufferedOutputStream                        PrintStream     DataOutputStream
+    字符輸入流 Reader            FileReader          BufferedReader          InputStreamReader
+    字符輸出流 Writer            FileWriter          BufferedWriter                              PrintWriter
+
+【Writer字符輸出流的注意事項】
+    字符輸出流FileWriter寫出數據後必須刷新流，或關閉流。寫出的數據才能生效
+        flush() 。刷新cache，將還在cache的data寫入文件。刷新後能繼續使用流
+                    <因為寫入disk之前後先有個暫存cache收集data，之後才會一次性寫入>
+        close() 。關閉包含了flush()，關閉後無法繼續使用流
+
+【使用時機】
+Question: 什麼時候用字節流，什麼時候用字符流
+Answer:
+        字節流：copy的時候
+        字符流：讀寫文本的時候
+
+【緩衝字節輸入流BufferedInputStream】
+作用：可以提高InputStream讀取數據的性能，因為減少了系統調用。
+原理：自帶 8KB 緩衝池，緩衝字節輸出流也是
 
 
 
