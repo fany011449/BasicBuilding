@@ -121,5 +121,41 @@ Answer:
 作用：可以提高InputStream讀取數據的性能，因為減少了系統調用。
 原理：自帶 8KB 緩衝池，緩衝字節輸出流也是
 
+【線程安全問題】
+當有一個共享資源，被多個線程讀取修改時，就會產生"線程安全問題"
+
+【處理方法有三種】
+1. 同步代碼塊
+2. 同步方法
+3. lock鎖
+
+【線程池ThreadPoolExecutor的參數說明】
+
+1. corePoolSize：線程池的核心線程數量
+2. maximumPoolSize：指定線程池的最大線程數量
+臨時工：maximumPoolSize - corePoolSize
+3. keepAliveTime：指定臨時線程的存活時間
+4. unit：指定臨時線程存活的時間單位(秒、分、時、天)
+5. workQueue：指定線程池的任務隊列
+6. threadFactory：指定線程池的線程工廠 (主要生成線程)
+7. handler：指定線程池的任務拒絕策略 (主要返回異常)
+
+【臨時線程的創建時機點】
+新任務提交時，發現核心線程Busying，且任務隊列也滿了，並且還可以創建臨時線程，此時既可創建。
+
+【ThreadPoolExecutor的主要線程數】
+corePoolSize：電腦CPU數
+會分成兩種：
+    1. CPU密集型任務
+        => 用於計算類型的Code
+        maximumPoolSize：corePoolSize + 1
+    2. IO 密集型任務
+        => 用於磁盤讀寫、網路請求
+        maximumPoolSize：corePoolSize * (2 ~ 5)
+
+【併發(Concurrent/並行(Parallel)】
+併發 ： 一個CPU輪番切換處理多個線程，切換快速
+並行 ： 同時間處理多個線程
+多線程：併發與併行同時進行
 
 

@@ -1,0 +1,32 @@
+package com.dell.synchronized_method;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Account {
+    private double money;
+
+    public synchronized void withDraw(double money) {
+        // 拿到當前誰來取錢
+        String name = Thread.currentThread().getName();
+
+        // 判斷餘額
+        // 實例方法建議用 this
+        // 靜態方法建議用 類名.class
+        if (this.money >= money){
+            System.out.println(name + "取錢成功，餘額剩下：" + (this.money-money));
+            // 更新餘額
+            this.money -= money;
+            System.out.println(name + "取錢成功，餘額剩下：" + (this.money));
+
+        } else {
+            System.out.println("餘額不足");
+        }
+    }
+
+    
+}

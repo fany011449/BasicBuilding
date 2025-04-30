@@ -24,6 +24,7 @@
       <module fileurl="file://$PROJECT_DIR$/SingleInstance/SingleInstance.iml" filepath="$PROJECT_DIR$/SingleInstance/SingleInstance.iml" />
       <module fileurl="file://$PROJECT_DIR$/Stream/Stream.iml" filepath="$PROJECT_DIR$/Stream/Stream.iml" />
       <module fileurl="file://$PROJECT_DIR$/StringBuilder/StringBuilder.iml" filepath="$PROJECT_DIR$/StringBuilder/StringBuilder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thread/Thread.iml" filepath="$PROJECT_DIR$/Thread/Thread.iml" />
       <module fileurl="file://$PROJECT_DIR$/Time/Time.iml" filepath="$PROJECT_DIR$/Time/Time.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/building.iml" filepath="$PROJECT_DIR$/.idea/building.iml" />
     </modules>
