@@ -197,3 +197,14 @@ corePoolSize：電腦CPU數
                (返回一個響應：確認斷開)
                ------------->
                (發出確認斷開消息，確認斷開)
+
+【Exception的分類】
+
+   類型	              編譯期檢查	           是否強制處理	                  常見例子
+Checked Exception       是	            必須 try-catch 或 throws    	IOException, SQLException
+    (compile-time)                                                     (檔案不存在、網路中斷)
+	
+UnChecked Exception     否	            可選擇處理	                NullPointerException, ArithmeticException
+    (Runtime-time)	                                                     (除以零、陣列越界、null pointer)
+
+
