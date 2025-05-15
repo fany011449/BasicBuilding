@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/InnerClass/InnerClass.iml" filepath="$PROJECT_DIR$/InnerClass/InnerClass.iml" />
       <module fileurl="file://$PROJECT_DIR$/Interface/Interface.iml" filepath="$PROJECT_DIR$/Interface/Interface.iml" />
       <module fileurl="file://$PROJECT_DIR$/Internet/Internet.iml" filepath="$PROJECT_DIR$/Internet/Internet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Junit-Reflect-Annotation-Proxy/Junit-Reflect-Annotation-Proxy.iml" filepath="$PROJECT_DIR$/Junit-Reflect-Annotation-Proxy/Junit-Reflect-Annotation-Proxy.iml" />
       <module fileurl="file://$PROJECT_DIR$/Lambda/Lambda.iml" filepath="$PROJECT_DIR$/Lambda/Lambda.iml" />
       <module fileurl="file://$PROJECT_DIR$/Map/Map.iml" filepath="$PROJECT_DIR$/Map/Map.iml" />
       <module fileurl="file://$PROJECT_DIR$/Method_references/Method_references.iml" filepath="$PROJECT_DIR$/Method_references/Method_references.iml" />

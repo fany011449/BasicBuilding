@@ -2,8 +2,6 @@
 
 抽象類和接口的差異：  
 
-
-
     相同點：  
         1. 都是抽象形式，都可以有抽象方法，都無法創建對象。  
         2. 都是子類形式：  抽象類 是被 子類 繼承使用  
@@ -19,8 +17,6 @@
             接口   可以被多個類實現  
         3. 抽象類  適用於模板設計(Design Pattern)，更利於做父類，實現代碼的複用性  
             接口   適用於做功能的解耦合，模組性更強  
-
-
 
 關於static修飾：  
     無static修飾，屬於 對象object 擁有的  
@@ -200,8 +196,6 @@ corePoolSize：電腦CPU數
                <-------------               (返回一個響應：確認斷開)  
                ------------->               (發出確認斷開消息，確認斷開)  
 
-
-
 ### 
 
 ### 【Exception的分類】
@@ -211,6 +205,39 @@ corePoolSize：電腦CPU數
 | Checked Exception<br/>(compile-time)   | 是     | 必須 try-catch 或 throws | IOException、SQLException<br/>(檔案不存在、網路中斷)                             |
 | UnChecked Exception<br/>(Runtime-time) | 否     | 可選擇處理                 | NullPointerException, ArithmeticException<br/>(除以零、陣列越界、null pointer) |
 
+# 【元註解】
+
+## Target
+
+```java
+// 只能註解在 方法、成員變量、構造器
+@Target({ElementType.METHOD, ElementType.FIELD, ElementType.CONSTRUCTOR})
+```
 
 
 
+> 1. TYPE 類、接口
+> 
+> 2. FIELD 成員變量
+> 
+> 3. METHOD 成員方法
+> 
+> 4. PARAMETER 方法參數
+> 
+> 5. CONSTRUCTOR 構造器
+> 
+> 6. LOCAL_VARIABLE 局部變量
+
+## Retention
+
+```java
+@Retention(RetentionPolicy.RUNTIME) // 編譯器運行時(一直都存在)
+```
+
+
+
+> 1. SOURCE (幾乎不用)
+> 
+> 2. CLASS (默認值)
+> 
+> 3. RUNTIME (通常都是用這個)

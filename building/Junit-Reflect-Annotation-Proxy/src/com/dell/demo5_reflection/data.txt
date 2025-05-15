@@ -1,0 +1,10 @@
+=========Teacher===========
+name = 王
+age = 23
+salary = 10000.0
+address = address
+=========Student===========
+name = 陳
+age = 11
+address = address
+grande = 3
